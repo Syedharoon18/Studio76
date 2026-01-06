@@ -1,0 +1,59 @@
+/* Page layout */
+.page {
+  min-height: calc(100vh - 70px);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa, #e9eef4);
+}
+
+/* Page heading */
+.page h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Intro text */
+.page p {
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Contact card */
+.contact-card {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact details */
+.contact-card p {
+  font-size: 15px;
+  margin: 12px 0;
+  color: #333;
+}
+
+/* Highlight icons */
+.contact-card strong {
+  color: #111;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .page h1 {
+    font-size: 26px;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+}
