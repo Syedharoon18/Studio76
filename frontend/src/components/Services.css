@@ -1,61 +1,33 @@
-/* Page layout */
 .page {
-  min-height: calc(100vh - 70px);
-  padding: 40px 20px;
-  background: linear-gradient(135deg, #f5f7fa, #eef2f6);
+  padding: 60px 80px;
 }
 
-/* Page heading */
 .page h1 {
   text-align: center;
-  font-size: 34px;
-  margin-bottom: 35px;
-  color: #222;
+  margin-bottom: 50px;
+  color: gold;
+  font-size: 36px;
 }
 
-/* Services grid */
-.page {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-/* Service card */
 .card {
-  background: #ffffff;
-  padding: 25px 22px;
+  background: #151515;
+  padding: 30px;
   border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+  transition: transform 0.3s;
 }
 
-/* Card hover */
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Service title */
 .card h3 {
-  font-size: 20px;
+  color: gold;
   margin-bottom: 12px;
-  color: #111;
 }
 
-/* Service description */
 .card p {
-  font-size: 15px;
+  color: #ccc;
   line-height: 1.6;
-  color: #555;
-}
-
-/* Mobile adjustments */
-@media (max-width: 480px) {
-  .page h1 {
-    font-size: 26px;
-  }
-
-  .card {
-    padding: 20px;
-  }
 }

@@ -1,59 +1,65 @@
-/* Page layout */
+/* Page container */
 .page {
-  min-height: calc(100vh - 70px);
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(135deg, #f5f7fa, #e9eef4);
+  min-height: calc(100vh - 80px);
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f7f8fa, #eef1f5);
+  text-align: center;
 }
 
-/* Page heading */
+/* Heading */
 .page h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
+  font-size: 36px;
+  margin-bottom: 12px;
   color: #222;
 }
 
-/* Intro text */
+/* Subtitle */
 .page p {
-  max-width: 600px;
-  text-align: center;
-  font-size: 16px;
+  font-size: 17px;
   color: #555;
-  margin-bottom: 25px;
-  line-height: 1.6;
+  margin-bottom: 40px;
 }
 
 /* Contact card */
 .contact-card {
+  max-width: 520px;
+  margin: auto;
   background: #ffffff;
-  padding: 25px 30px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 420px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 35px 40px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  text-align: left;
 }
 
-/* Contact details */
+/* Contact rows */
 .contact-card p {
-  font-size: 15px;
-  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
   color: #333;
+  margin-bottom: 18px;
+  line-height: 1.6;
 }
 
-/* Highlight icons */
-.contact-card strong {
-  color: #111;
+/* Icons spacing */
+.contact-card p strong {
+  min-width: 120px;
+  color: #000;
 }
 
-/* Responsive adjustments */
-@media (max-width: 480px) {
-  .page h1 {
-    font-size: 26px;
+/* Hover effect */
+.contact-card:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 28px;
   }
 
-  .contact-card {
-    padding: 20px;
+  .page h1 {
+    font-size: 28px;
   }
 }

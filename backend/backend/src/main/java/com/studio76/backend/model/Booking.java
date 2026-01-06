@@ -8,6 +8,7 @@ public class Booking {
     private String service;
     private String date;
 
+    // getters & setters
     public String getName() {
         return name;
     }
@@ -19,7 +20,7 @@ public class Booking {
     public String getEmail() {
         return email;
     }
-
+    
     public void setEmail(String email) {
         this.email = email;
     }
@@ -27,7 +28,7 @@ public class Booking {
     public String getPhone() {
         return phone;
     }
-
+    
     public void setPhone(String phone) {
         this.phone = phone;
     }
@@ -35,16 +36,15 @@ public class Booking {
     public String getService() {
         return service;
     }
-
+    
     public void setService(String service) {
         this.service = service;
-
     }
 
     public String getDate() {
         return date;
     }
-
+    
     public void setDate(String date) {
         this.date = date;
     }

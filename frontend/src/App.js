@@ -12,7 +12,6 @@ function App() {
   return (
     <HashRouter>
       <Navbar />
-      <h1>Testing</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

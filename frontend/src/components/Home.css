@@ -1,58 +1,29 @@
-/* Hero section */
 .home-hero {
-  min-height: calc(100vh - 70px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-  text-align: center;
-  color: #ffffff;
-
-  /* Background image with overlay */
+  height: calc(100vh - 80px);
   background: linear-gradient(
       rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.65)
     ),
-    url("https://via.placeholder.com/1600x900?text=Studio76+Photography");
+    url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
 }
 
-/* Main heading */
 .home-hero h1 {
-  font-size: 52px;
-  font-weight: 700;
+  font-size: 60px;
+  color: gold;
   margin-bottom: 20px;
-  letter-spacing: 1px;
 }
 
-/* Subtitle text */
 .home-hero p {
   max-width: 700px;
   font-size: 20px;
-  line-height: 1.7;
-  color: #f0f0f0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .home-hero h1 {
-    font-size: 40px;
-  }
-
-  .home-hero p {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-hero h1 {
-    font-size: 32px;
-  }
-
-  .home-hero p {
-    font-size: 16px;
-  }
+  line-height: 1.6;
+  color: #ddd;
 }

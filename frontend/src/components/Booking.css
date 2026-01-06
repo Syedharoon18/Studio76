@@ -83,3 +83,116 @@
     padding: 20px;
   }
 }
+.form {
+  max-width: 520px;
+  margin: auto;
+  background: #141414;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #222;
+  color: #fff;
+}
+
+.form button {
+  width: 100%;
+  padding: 14px;
+  background: gold;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #ffd700;
+}
+/* Page background */
+.page {
+  min-height: calc(100vh - 80px);
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f7f8fa, #eef1f5);
+  text-align: center;
+}
+
+/* Title */
+.page h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Form card */
+.form {
+  max-width: 420px;
+  margin: auto;
+  background: #0f0f0f;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.45);
+}
+
+/* Inputs */
+.form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: none;
+  background: #1f1f1f;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+}
+
+/* 🔥 PLACEHOLDER FIX (THIS IS THE KEY) */
+.form input::placeholder {
+  color: #fffcfc;        /* light gray */
+  font-size: 15px;
+  opacity: 1;            /* force visibility */
+}
+
+/* Focus effect */
+.form input:focus {
+  background: #262626;
+  box-shadow: 0 0 0 2px #f5d94e;
+}
+
+/* Date input text color */
+.form input[type="date"] {
+  color: #ffffff;
+}
+
+/* Submit button */
+.form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #f5d94e;
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #e6c840;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .form {
+    padding: 28px;
+  }
+}
