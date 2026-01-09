@@ -1,6 +1,5 @@
 package com.studio76.backend.controller;
 
-import com.studio76.backend.model.Booking;
 import com.studio76.backend.model.PhotographyService;
 import com.studio76.backend.service.StudioService;
 import org.springframework.web.bind.annotation.*;

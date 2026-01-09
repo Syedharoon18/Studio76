@@ -10,10 +10,30 @@ public class StudioService {
 
     public List<PhotographyService> getServices() {
         return List.of(
-            new PhotographyService("Wedding Photography", "Capture your big day"),
-            new PhotographyService("Portrait Photography", "Professional portraits"),
-            new PhotographyService("Event Coverage", "Corporate & private events"),
-            new PhotographyService("Product Photography", "Commercial shoots")
+            new PhotographyService(
+                1L,
+                "Wedding Photography",
+                "Capture your big day",
+                "/images/wedding.jpg"
+            ),
+            new PhotographyService(
+                2L,
+                "Portrait Photography",
+                "Professional portraits",
+                "/images/portrait.jpg"
+            ),
+            new PhotographyService(
+                3L,
+                "Event Photography",
+                "Corporate & private events",
+                "/images/event.jpg"
+            ),
+            new PhotographyService(
+                4L,
+                "Product Photography",
+                "Commercial shoots",
+                "/images/product.jpg"
+            )
         );
     }
 }

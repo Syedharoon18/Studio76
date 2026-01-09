@@ -1,0 +1,14 @@
+# --- Database files ---
+*.db
+*.mv.db
+*.trace.db
+
+# --- Backend ---
+backend/backend/target/
+backend/backend/uploads/
+
+# --- Frontend ---
+node_modules/
+
+# --- Environment ---
+.env

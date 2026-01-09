@@ -1,25 +1,83 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import Booking from "./components/Booking";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
+import PageTransition from "./components/PageTransition";
 
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Booking from "./pages/Booking";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import AdminLogin from "./pages/AdminLogin";
 
 function App() {
+  const location = useLocation();
+
   return (
-    <HashRouter>
+    <>
+      {/* NAVBAR ALWAYS ON TOP */}
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </HashRouter>
+
+      {/* PAGE TRANSITIONS */}
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route
+            path="/"
+            element={
+              <PageTransition>
+                <Home />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/services"
+            element={
+              <PageTransition>
+                <Services />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/booking"
+            element={
+              <PageTransition>
+                <Booking />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/gallery"
+            element={
+              <PageTransition>
+                <Gallery />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/contact"
+            element={
+              <PageTransition>
+                <Contact />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/admin-login"
+            element={
+              <PageTransition>
+                <AdminLogin />
+              </PageTransition>
+            }
+          />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 }
 

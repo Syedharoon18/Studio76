@@ -1,0 +1,84 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 40px;
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid #f5d77a;
+  backdrop-filter: blur(6px);
+}
+
+/* LOGO */
+.logo {
+  font-size: 1.6rem;
+  color: #f5d77a;
+  font-weight: bold;
+}
+
+/* LINKS CONTAINER */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* NORMAL NAV LINKS (NOT ADMIN) */
+.nav-links a:not(.admin-btn) {
+  position: relative;
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 2px;
+  transition: color 0.3s ease;
+}
+
+/* GOLD UNDERLINE */
+.nav-links a:not(.admin-btn)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #f5d76e, #d4af37);
+  transition: width 0.35s ease;
+}
+
+/* HOVER EFFECT */
+.nav-links a:not(.admin-btn):hover {
+  color: #f5d76e;
+}
+
+.nav-links a:not(.admin-btn):hover::after {
+  width: 100%;
+}
+
+/* ACTIVE PAGE */
+.nav-links a.active:not(.admin-btn) {
+  color: #f5d76e;
+}
+
+.nav-links a.active:not(.admin-btn)::after {
+  width: 100%;
+}
+
+/* ADMIN BUTTON (NO HOVER BG, NO UNDERLINE) */
+.admin-btn {
+  border: 1px solid #f5d77a;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #f5d77a;
+  background: transparent;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ADMIN HOVER — CLEAN */
+.admin-btn:hover {
+  background: transparent;   /* ❌ no yellow fill */
+  color: #f5d77a;
+}

@@ -1,16 +1,51 @@
-import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "../styles/Navbar.css";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2 className="logo">Studio76</h2>
-      <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/booking">Book Session</Link>
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/contact">Contact</Link>
+      <h1 className="logo">Studio76</h1>
+
+      <div className="nav-links">
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Home
+        </NavLink>
+
+        <NavLink
+          to="/services"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Services
+        </NavLink>
+
+        <NavLink
+          to="/booking"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Book Session
+        </NavLink>
+
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Gallery
+        </NavLink>
+
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Contact
+        </NavLink>
+
+        <NavLink to="/admin-login" className="admin-btn">
+          Admin
+        </NavLink>
       </div>
     </nav>
   );

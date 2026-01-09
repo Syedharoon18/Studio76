@@ -12,7 +12,7 @@
     <name>Studio76 Backend</name>
     <description>Backend for Studio76 Photography Application</description>
 
-    <!-- ✅ Spring Boot Parent -->
+    <!-- ✅ Spring Boot Parent (UNCHANGED) -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -32,31 +32,45 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- ✅ Spring Boot JPA (REQUIRED for Gallery CRUD) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- ✅ H2 Database (Lightweight & perfect for admin dashboard) -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- ✅ Validation (Email, Phone validation support) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!-- ✅ Twilio WhatsApp SDK (CORRECT) -->
+        <!-- ✅ Twilio WhatsApp SDK (VERSION UNCHANGED) -->
         <dependency>
             <groupId>com.twilio.sdk</groupId>
             <artifactId>twilio</artifactId>
             <version>9.0.0</version>
         </dependency>
 
-        <!-- ✅ Lombok (Optional but helpful) -->
+        <!-- ✅ Lombok (Optional) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- ✅ Environment variable support -->
         <dependency>
             <groupId>me.paulschwarz</groupId>
             <artifactId>spring-dotenv</artifactId>
             <version>4.0.0</version>
         </dependency>
-
 
         <!-- ✅ Testing -->
         <dependency>

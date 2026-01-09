@@ -1,0 +1,91 @@
+/* FULL PAGE BACKGROUND */
+.admin-login-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGIN CARD */
+.admin-login-card {
+  width: 400px;
+  background: rgba(18, 18, 18, 0.96);
+  border-radius: 20px;
+
+  /* IMPORTANT: more inner spacing */
+  padding: 45px 40px;
+
+  border: 1px solid rgba(245, 217, 118, 0.35);
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.85);
+}
+
+/* TITLE */
+.admin-login-card h1 {
+  text-align: center;
+  color: #f5d976;
+  margin-bottom: 35px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* FORM */
+.admin-login-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* INPUTS */
+.admin-login-card input {
+  width: 100%;
+  box-sizing: border-box; /* 🔥 KEY FIX */
+
+  padding: 14px 16px;
+  margin-bottom: 18px;
+
+  border-radius: 14px;
+  border: 1px solid rgba(245, 217, 118, 0.35);
+  background: #222;
+
+  color: #eee;
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+.admin-login-card input::placeholder {
+  color: #aaa;
+}
+
+.admin-login-card input:focus {
+  border-color: #f5d976;
+  box-shadow: 0 0 12px rgba(245, 217, 118, 0.45);
+}
+
+/* LOGIN BUTTON */
+.admin-login-card button {
+  margin-top: 10px;
+
+  /* CENTERED BUTTON */
+  width: 75%;
+
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #f5d976, #e6c861);
+  color: #000;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-login-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(245, 217, 118, 0.55);
+}
